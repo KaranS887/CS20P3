@@ -12,7 +12,7 @@ Course: Computer Science 20
 package mastery;
 import java.util.Scanner;
 import java.lang.Math;
-public class PrimeNumber {
+public class PrimeNumbers {
 	public static boolean isPrime(int num) {
 		for(int i = 2; i <= Math.sqrt(num); i++ ) 
 		{
