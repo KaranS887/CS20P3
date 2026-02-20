@@ -12,7 +12,7 @@ Course: Computer Science 20
 package skillbuilders;
 import java.util.Scanner;
 public class Exponentiation {
-	public static double exponent(int x, int power) {
+	public static double exponent(int x, int power) {  //uses math function to figure out exponentiation
 		return Math.pow(x, power);
 
 		
@@ -21,8 +21,8 @@ public class Exponentiation {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number and what power to be raised to (seperated by spaces): ");
-		int base = input.nextInt(), pwr = input.nextInt();
-		System.out.print("The exponentiation is " + exponent(base, pwr));
+		int base = input.nextInt(), pwr = input.nextInt();  //declares both user variables and prints exponentiation
+		System.out.print("The exponentiation is " + exponent(base, pwr)); 
 		input.close();
 		
 		

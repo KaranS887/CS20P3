@@ -14,7 +14,7 @@ import java.util.Scanner;
 import java.lang.Math;
 public class PrimeNumbers {
 	public static boolean isPrime(int num) {
-		for(int i = 2; i <= Math.sqrt(num); i++ ) 
+		for(int i = 2; i <= Math.sqrt(num); i++ )  //tests every number before the root of user number for divisibility
 		{
 			if(num % i == 0) 
 			{
@@ -28,7 +28,7 @@ public class PrimeNumbers {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number to test if it is prime: ");
 		if (isPrime(input.nextInt())) {
-			System.out.print("Yes it is prime");
+			System.out.print("Yes it is prime");  //uses method to test user value
 		}
 		else {
 			System.out.print("No it is not prime");

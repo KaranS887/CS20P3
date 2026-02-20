@@ -18,7 +18,7 @@ public class Investment {
 		int years = 0;
 
 		do {
-				n += 0.075*n;
+				n += 0.075*n;  //do-while loop to compound investment until limit of 5k
 				years++;
             
                     } while (n < 5000);

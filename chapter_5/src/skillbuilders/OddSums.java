@@ -10,7 +10,7 @@ public class OddSums {
 		for(int i = 0; i <= num ; i++) {
 			
 			if (i % 2 != 0) {
-				sum += i;}
+				sum += i;} //increase i to every odd number until it reaches or passes the user number
 			}
 		   System.out.println("Sum: " + sum);  
 		   input.close();

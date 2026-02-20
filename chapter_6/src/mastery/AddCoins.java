@@ -22,10 +22,10 @@ public class AddCoins {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter Quarters, Dimes, Nickels, and Pennies (separated by spaces): ");
 
-		int q = input.nextInt(), d = input.nextInt(), n = input.nextInt(), p = input.nextInt();
+		int q = input.nextInt(), d = input.nextInt(), n = input.nextInt(), p = input.nextInt(); //4 seperated declarations
 		input.close();
 
-		System.out.printf("Total: $%.2f\n", getDollarAmount(q, d, n, p));
+		System.out.printf("Total: $%.2f\n", getDollarAmount(q, d, n, p)); //print to 2 decimals for currency
 
 
 
