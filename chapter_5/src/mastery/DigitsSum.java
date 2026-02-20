@@ -17,14 +17,15 @@ public class DigitsSum {
 
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
-	System.out.print("Enter your number: "); 
+	System.out.print("Enter your number: "); //ask user for number and declare int
+	
 	int num = input.nextInt(); 
 	input.close();
 	int sum = 0;
 	while (num != 0) {
 		
-		sum = sum + num%10;
-		num = num/10;
+		sum = sum + num%10; //get remainder in ones place and add to sum
+		num = num/10; //divide by 10 to repeat
 		
 	}
 	
