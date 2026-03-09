@@ -46,6 +46,6 @@ public class Circle {
 
     
     public String toString() {
-        return "Circle radius: " + radius + ", area: " + area() + ", circumference: " + circumference();
+        return "Circle's radius: " + radius + ", area: " + area() + ", circumference: " + circumference();
     }
 }

@@ -12,7 +12,7 @@ public class Rectangle {
 
     public Rectangle(double l, double w) {
         length = l;
-        width = w;
+        width = w;   
     }
 
     public double area() {

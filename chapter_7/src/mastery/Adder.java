@@ -3,7 +3,7 @@
 Program: Adder.java       		Date: March 9, 2026
 
 Purpose: Create an application gives the user 2 random numbers to add together with 3 tries to get it before moving. Once quitting the program will show the user how well they did
-Author: Karanveer S.
+Author: Karanveer S
 School: CHHS
 Course: Computer Science 20
  

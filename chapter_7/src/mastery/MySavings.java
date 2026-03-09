@@ -3,7 +3,7 @@
 Program: MySavings.java       		Date: March 9, 2026
 
 Purpose: Create an application that lets the user input how many of each coin they have in a piggy bank object. They can then perform operations with the money
-Author: Karanveer S.
+Author: Karanveer S
 School: CHHS
 Course: Computer Science 20
  

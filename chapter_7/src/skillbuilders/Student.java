@@ -12,13 +12,13 @@ public class Student {
 	  lastName = "";
 	  address = "#####";
 	  stuID = 00000000;
-		
+		   
 
 	}
 
 	public Student(String f,String l, String ad, int ID)
 
-	{firstName = f;
+	{firstName = f;   
 	lastName = l;
 	address = ad;
 	stuID = ID;

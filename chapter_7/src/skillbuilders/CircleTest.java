@@ -18,7 +18,7 @@ public class CircleTest {
         System.out.println("c1 equals c2: " + c1.equals(c2));
         System.out.println("c1 equals c3: " + c1.equals(c3));
 
-        System.out.println("c1 radius: " + c1.getRadius());
+        System.out.println("c1 radius: " + c1.getRadius());    
         System.out.println("c1 area: " + c1.area());
         System.out.println("c1 circumference: " + c1.circumference());
     }

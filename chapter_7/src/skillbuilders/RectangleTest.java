@@ -9,7 +9,7 @@ public class RectangleTest {
         Rectangle r2 = new Rectangle(); 
         Rectangle r3 = new Rectangle(5, 3);
         Rectangle r4 = new Rectangle(5, 3);
-
+   
 		        System.out.println(r1.toString());
 		        System.out.println(r2.toString());
 		        System.out.println(r3.toString());
