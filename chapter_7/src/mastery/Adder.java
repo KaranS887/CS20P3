@@ -44,7 +44,13 @@ public class Adder {
                     break; 
                 } else 
                 {
-                    System.out.println(tryNum < 3 ? "Try again." : "Out of tries!");
+                	if (tryNum < 3) {
+                	    System.out.println("Try again.");
+                	} else {
+                	    System.out.println("Out of tries!");
+                	}
+                	count += 1;
+
                 }
             }
            

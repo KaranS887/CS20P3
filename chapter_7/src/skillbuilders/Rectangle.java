@@ -35,7 +35,7 @@ public class Rectangle {
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
-        }
+        } 
         if (obj instanceof Rectangle) {
             Rectangle other = (Rectangle) obj;
             return this.length == other.length && this.width == other.width;
