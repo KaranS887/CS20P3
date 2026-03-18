@@ -10,93 +10,26 @@ Course: Computer Science 20
 
 */
 package mastery;
-import java.util.Scanner;
+
 public class MySavings {
+	
+	    private int pennies, nickels, dimes, quarters;
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-        MySavingsTest myBank = new MySavingsTest();
-        int choice = 0;  
+	    public MySavings() {
+	        this.pennies = 0; this.nickels = 0; this.dimes = 0; this.quarters = 0;
+	    }
+	    public void addPenny(int count) { pennies += count; }//add as many of coin as user chooses
+	    public void addNickel(int count) { nickels += count; } //add as many of coin as user chooses
+	    public void addDime(int count) { dimes += count; }//add as many of coin as user chooses
+	    public void addQuarter(int count) { quarters += count; }//add as many of coin as user chooses
+	    
+	    public double getTotal() {
+	        return (pennies * 0.01) + (nickels * 0.05) + (dimes * 0.10) + (quarters * 0.25);
+	    }
 
-        
-        while (choice != 7) {
-            System.out.println("\n1. Show total\n2. Add penny\n3. Add nickel");
-            System.out.println("4. Add dime\n5. Add quarter\n6. Take out money\n7. Quit");  //loop until user quits
-            System.out.print("Enter choice: ");
-            
-            choice = input.nextInt(); 
-
-            switch (choice) {
-                case 1: 
-                    System.out.printf("Total: $%.2f\n", myBank.getTotal()); 
-                    break;
-                case 2: 
-                    System.out.print("How many pennies to add? "); //call object method
-                    int p = input.nextInt();
-                    myBank.addPenny(p); 
-                    break;
-                case 3: 
-                    System.out.print("How many nickels to add? ");//call object method
-                    int n = input.nextInt();
-                    myBank.addNickel(n);
-                    break;
-                case 4: 
-                    System.out.print("How many dimes to add? ");//call object method
-                    int d = input.nextInt();
-                    myBank.addDime(d); 
-                    break;
-                case 5: 
-                    System.out.print("How many quarters to add? ");//call object method
-                    int q = input.nextInt();
-                    myBank.addQuarter(q); 
-                    break;
-
-                case 6: myBank.takeOutMoney(); break; //call object method
-                case 7: System.out.println("Bye"); break; //leave code
-                default: System.out.println("Invalid choice.");
-            }
-        }
-        input.close();
-    }
-
-
-	}
-/* Screen Dump
-1. Show total
-2. Add penny
-3. Add nickel
-4. Add dime
-5. Add quarter
-6. Take out money
-7. Quit
-Enter choice: 4
-How many dimes to add? 25
-
-1. Show total
-2. Add penny
-3. Add nickel
-4. Add dime
-5. Add quarter
-6. Take out money
-7. Quit
-Enter choice: 1
-Total: $2.50
-
-1. Show total
-2. Add penny
-3. Add nickel
-4. Add dime
-5. Add quarter
-6. Take out money
-7. Quit
-Enter choice: 7
-Bye
-
-
-
-
- 
-
-*/
-
+	    public void takeOutMoney() {
+	        this.pennies = 0; this.nickels = 0; this.dimes = 0; this.quarters = 0;  //remove all coins
+	        System.out.println("Piggy bank emptied!");
+	    }
+	} 
 

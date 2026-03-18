@@ -10,28 +10,86 @@ Course: Computer Science 20
 
 */
 package mastery;
+import java.util.Scanner;
 
 public class AdderTest {
-	private int num1;
-	private int num2;
-	public String NumbersAndEquation() {
-		num1 = (int)(Math.random() * 21); //random 2 numbers between 0-20
-		num2 = (int)(Math.random() * 21);
-		        
-		return num1 + " + " + num2; 
-		    }
 
-	public boolean checkAnswer(int userInput) {
-        return userInput == (num1 + num2); //confirm true for answer
-    }
-	public int getPoints(int attempt) {
-        if (attempt == 1) return 5; //get it in time
-        if (attempt == 2) return 3;
-        if (attempt == 3) return 1;
-        return 0;
-    }
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+        Adder game = new Adder();
+        int score = 0;
+        int count = 0;
+       
+        System.out.println("Welcome to the Math Quiz! (999 to exit)");
+        
+        while (true) 
+        {
+            System.out.println(game.NumbersAndEquation());
 
-}
+            for (int tryNum = 1; tryNum <= 3; tryNum++) 
+            {
+                int userAnswer = input.nextInt();
 
+                if (userAnswer == 999)
+                {System.out.println("Score: " + score + "/" + (count * 5)); 
+                input.close();
+                return;
+                }
+
+                if (game.checkAnswer(userAnswer)) 
+                {
+                    score += game.getPoints(tryNum);
+                    System.out.println("Correct!");
+                    count += 1;
+                    break; 
+                } else 
+                {
+                	if (tryNum < 3) {
+                	    System.out.println("Try again.");
+                	} else {
+                	    System.out.println("Out of tries!");
+                	    count += 1;
+                	}
+                	;
+
+                }
+            }
+           
+        }
+        			
+            
+
+        }
+
+	/* Screen Dump
+	 * Welcome to the Math Quiz! (999 to exit)
+3 + 7
+10
+Correct!
+9 + 2
+11
+Correct!
+4 + 14
+1
+Try again.
+1
+Try again.
+18
+Correct!
+0 + 8
+999
+Score: 11/15
+
+
+	
+
+	 
+
+	*/
+		
+	
+		
+
+	}
 
 
