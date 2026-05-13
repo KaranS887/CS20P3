@@ -12,11 +12,9 @@ Course: Computer Science 20
 package mastery;
 
 public class SelectionSort {
-	    private int[] originalArray;
 	    private int[] sortedArray;
 
 	    public SelectionSort(int[] arr) {
-	        this.originalArray = arr;
 	        this.sortedArray = new int[arr.length]; 
 	        for (int k = 0; k < arr.length; k++) {
 	            this.sortedArray[k] = arr[k];

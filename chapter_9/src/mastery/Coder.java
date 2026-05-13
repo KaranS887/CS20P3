@@ -21,6 +21,8 @@ public class Coder {
 		for (int i = 0; i < messager.length; i++) {
 			if (Character.isLetter(messager[i])) {
 			messager[i] += 2; }
+			
+
 			 
 			
 			
